@@ -6,6 +6,7 @@
 
   <groupId>gr.aueb.dmst.GiannisKokkosis</groupId>
   <artifactId>seip2020_practical_assignments</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
 
   <name>seip2020_practical_assignments</name>
