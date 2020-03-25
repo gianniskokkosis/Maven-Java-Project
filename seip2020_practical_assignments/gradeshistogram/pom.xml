@@ -11,7 +11,13 @@
   <artifactId>gradeshistogram</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>gradeshistogram</name>
+  <!--Name and Description of the child module-->
+  <name>Child module - Grades Histogram</name>
+  <description>
+    The functionality of this module is the creation of a Histogram for a given file with grades form the user.
+    It generates a jar that is called "fat-jar". This fat jar includes the dependency in the main executable jar.
+  </description>
+  
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
