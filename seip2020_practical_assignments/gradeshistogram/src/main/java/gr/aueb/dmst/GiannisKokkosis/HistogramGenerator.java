@@ -1,4 +1,4 @@
-package gr.aueb.dmst.GiannisKokkosis;
+package gradeshistogram;
 
 import java.io.*;
 import org.jfree.chart.ChartFactory;
