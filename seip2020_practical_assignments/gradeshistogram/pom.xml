@@ -92,7 +92,7 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass><!--MyMainClassPath--></mainClass> 
+                  <mainClass>gr.aueb.dmst.GiannisKokkosis.HistogramGenerator</mainClass> 
                 </manifest>
               </archive>
               <descriptorRefs>
