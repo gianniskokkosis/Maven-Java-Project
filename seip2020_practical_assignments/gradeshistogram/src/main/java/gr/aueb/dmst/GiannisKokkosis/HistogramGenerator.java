@@ -10,7 +10,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 
 public class HistogramGenerator{
 
-	public int [] createArray(File file){
+	public int [] createArray(File file) throws Exception{
 
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		BufferedReader br = new BufferedReader(new FileReader(file));
@@ -33,7 +33,7 @@ public class HistogramGenerator{
 
 	}
 
-    public void generateChart(int [] gradesValues) {
+    public void generateChart(int [] gradesValues) throws Exception {
 
     	/*
     	 *javadoc goes here
