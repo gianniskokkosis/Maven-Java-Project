@@ -64,7 +64,7 @@ public class HistogramGenerator{
 		frame.setVisible(true);
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception{
 
     	HistogramGenerator hist = new HistogramGenerator();
     	File file = new File(args[0]);
