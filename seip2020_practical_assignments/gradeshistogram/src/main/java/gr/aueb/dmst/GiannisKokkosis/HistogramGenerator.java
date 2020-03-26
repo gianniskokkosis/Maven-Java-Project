@@ -67,7 +67,7 @@ public class HistogramGenerator{
     public static void main(String args[]){
 
     	HistogramGenerator hist = new HistogramGenerator();
-    	File file = new File(args[0])
+    	File file = new File(args[0]);
 
     	int [] grades = hist.createArray(file);
 
