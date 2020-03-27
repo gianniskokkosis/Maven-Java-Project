@@ -12,10 +12,9 @@
   <version>1.0-SNAPSHOT</version>
 
   <!--Name and Description of the Parent Module--> 
-  <name>Parent Module - SEIP 2020 Practical Assignments</name>
+  <name>SEIP 2020 Practical Assignments</name>
   <description>
-    This module is the parent module of the 2nd Assignment SEIP maven project.
-    It has one child module named gradeshistogram, that generates a histogram from a given file with grades.
+    This is a simple project that demonstrates how a multi-module maven project is structured.
   </description>
     
   <!-- FIXME change it to the project's website -->
