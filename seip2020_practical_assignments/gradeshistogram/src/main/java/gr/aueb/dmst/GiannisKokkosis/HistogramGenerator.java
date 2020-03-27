@@ -1,6 +1,7 @@
 package gradeshistogram;
 
 import java.io.*;
+import java.util.ArrayList;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
@@ -16,13 +17,85 @@ import org.jfree.data.xy.XYSeriesCollection;
 public class HistogramGenerator{
 
     /***
+     * Receives a single dimensional array, created by 
+     * createArray mehtod. It returns an ArraList of 
+     * Integers that contains the all the values of 
+     * the array without its duplicates.
+     * 
+     * @param array1 Single dimension integer array
+     */
+    public ArrayList<Integer> dropDup(int[] array1){
+
+        // Initialize an Arralist of Integers
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        
+        // Loop through the values of the array
+        for(int i = 0; i < array1.length; i++){
+
+            /*
+             * If the current value of the array isn' t in the 
+             * values of the Arralist the add it in the ArrayList.
+             * Otherwise procced.
+             */
+            if (!array.contains(array1[i])){
+                array.add(array1[i]);
+            }
+        }
+
+        return array; // Return the ArrayList
+    }
+
+    /***
+     * Receives a single dimensional array, created by
+     * the createArray method. It returns an ArrayList
+     * that contains the frequency of the values of the array.
+     * 
+     * @param array2 Single dimensional array
+     */
+    public ArrayList<Integer> countFreq(int[] array2) { 
+
+        // Initialize two ArrayLists. One Boolean and one Integer
+        ArrayList<Boolean> visited = new ArrayList<Boolean>(); 
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        // Loop thtough the array and fill all the Boolean ArrayList with false
+        for(int k = 0; k < array2.length; k++){
+            visited.add(false);
+        }
+     
+
+        /*
+         * Traverse through array elements and 
+         * count frequencies
+         */  
+        for (int i = 0; i < array2.length; i++) { 
+
+            // Skip this element if already processed 
+            if (visited.get(i) == true) 
+                continue; 
+
+            // Count frequency 
+            int count = 1; 
+            for (int j = i + 1; j < array2.length; j++) { 
+                if (array2[i] == array2[j]){ 
+                    visited.add(j, true); 
+                    count++; 
+                } 
+            }
+            list.add(count); // Add the frequency of the element in the Integer ArrayList 
+        }
+
+        return list; // Return the ArrayList 
+    }
+
+
+    /***
      * Receives a File object and creates a single dimensional
      * array with the contens of the file as values of the array.
      * Then it returns this array.
      *
      * @param file a File object
      */
-
 	public int [] createArray(File file) throws Exception{
 
         // Read the file and store it to two BufferReader variables
@@ -62,7 +135,7 @@ public class HistogramGenerator{
      * 
      * @param gradesValues Single dimension integer array
      */
-    public void generateChart(int [] gradesValues) throws Exception {
+    public void generateChart(ArrayList<Integer> uniqe_values, ArrayList<Integer> freq_values) throws Exception {
 
         /*
          * The XYSeriesCollection object is a set XYSeries series (dataset) that
@@ -77,11 +150,11 @@ public class HistogramGenerator{
     	XYSeries data = new XYSeries("file");
 
         /*
-         * Populating the XYSeries data object from the input Integer array
+         * Populating the XYSeries data object from the input Integer ArrayLists
          * values.
          */
-    	for(int i = 0; i < gradesValues.length; i++){
-    		data.add(i, gradesValues[i]);
+    	for(int i = 0; i < uniqe_values.size(); i++){
+    		data.add(uniqe_values.get(i), freq_values.get(i));
     	}
 
         // add the series to the dataset
@@ -118,7 +191,15 @@ public class HistogramGenerator{
         // Initialize an Integer array with the createArray method of the class
     	int [] grades = hist.createArray(file);
 
+        /*
+         * Initialize two Integer ArrayLists
+         * x_values contains the unique values of the array
+         * y_values contains the frequencies of the values of the array
+         */
+        ArrayList<Integer> x_values = hist.dropDup(grades);
+        ArrayList<Integer> y_values = hist.countFreq(grades);
+
         // Call generateChart method of the class in order to plot the cart
-    	hist.generateChart(grades);
+    	hist.generateChart(x_values, y_values);
     }
 }
