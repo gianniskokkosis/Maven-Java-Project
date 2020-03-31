@@ -19,7 +19,7 @@ public class HistogramGenerator{
     /***
      * Receives a single dimensional array, created by 
      * createArray mehtod. It returns an ArraList of 
-     * Integers that contains the all the values of 
+     * Integers that contains all the values of 
      * the array without its duplicates.
      * 
      * @param array1 Single dimension integer array
@@ -34,7 +34,7 @@ public class HistogramGenerator{
 
             /*
              * If the current value of the array isn' t in the 
-             * values of the Arralist the add it in the ArrayList.
+             * values of the Arralist then add it in the ArrayList.
              * Otherwise procced.
              */
             if (!array.contains(array1[i])){
@@ -128,7 +128,7 @@ public class HistogramGenerator{
 	}
 
     /***
-     * Receives a single dimension Integer array. From this array the dataset
+     * Receives a single dimensional Integer array. From this array the dataset
      * that will be used for the visualization is generated. Finally, The chart
      * is generated with the use of the aforementioned dataset and then
      * presented in the screen.
