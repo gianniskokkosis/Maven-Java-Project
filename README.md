@@ -65,4 +65,10 @@ The produced jar is located in the target directory and can be executed as follo
 $ java -jar seip2020_practical_assignments/gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar  C:/.../a path to the file/.../
 ```
 
+### Math Operations
+
+For more informations about Math Operations click the link below
+
+[Click Here](seip2020_practical_assignments/math_operations/README.md) to learn more 
+
 ### Developed by: ```gianniskokkosis```
