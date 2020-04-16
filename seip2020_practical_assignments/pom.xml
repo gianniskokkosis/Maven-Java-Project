@@ -136,6 +136,8 @@
   <modules>
       
     <module>gradeshistogram</module>
+
+    <module>math_operations</module>
       
   </modules>
 </project>
