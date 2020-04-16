@@ -7,6 +7,6 @@
 	<artifactId>unittesting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Math Operations</name>
-	<description>A project for practicing Unit Testing</description>
+	<description>MathOperations provides simple arithmetic operations</description>
 
 </project>
