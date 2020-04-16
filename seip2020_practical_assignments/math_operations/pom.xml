@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 	<groupId>gr.aueb.gkortzis</groupId>
-	<artifactId>unittesting</artifactId>
+	<artifactId>math_operations</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Math Operations</name>
 	<description>MathOperations provides simple arithmetic operations</description>
