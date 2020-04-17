@@ -43,4 +43,10 @@ public class ArithmeticOperationsTest{
         thrown.expect(IllegalArgumentException.class);
         test.multiply(-2, -2);
     }
+
+    @Test
+    public void multiplyWithBigIntegersNumbers(){
+        thrown.expect(IllegalArgumentException.class);
+        test.multiply(2147483647, 2);
+    }
 }
