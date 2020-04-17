@@ -12,7 +12,7 @@ import java.util.List;
 * The FileIO provides simple file input/output operations
 * that serve as hands-on practice on Unit Testing.
 *
-* @author  agkortzis
+* @author  gianniskokkosis
 * @version 1.0
 * @since   2020-04-06 
 */
