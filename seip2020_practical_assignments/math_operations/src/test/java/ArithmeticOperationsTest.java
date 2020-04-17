@@ -20,7 +20,7 @@ public class ArithmeticOperationsTest{
 
     @Test(expected = ArithmeticException.class)
     public void divisonWithZero(){
-        test.divide(20.0, 0.0)
+        test.divide(20.0, 0.0);
     }
 
 }
