@@ -35,4 +35,5 @@ public class ArithmeticOperationsTest{
         test.divide(20.0, 0.0);
     }
 
+    public ExpectedException thrown = new ExpectedException.none()
 }
