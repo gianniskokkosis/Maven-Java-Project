@@ -35,5 +35,12 @@ public class ArithmeticOperationsTest{
         test.divide(20.0, 0.0);
     }
 
-    public ExpectedException thrown = new ExpectedException.none()
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void multiplyWithTwoNegativesNumbers(){
+        thrown.expect(IllegalArgumentException.class);
+        test.multiply(-2, -2);
+    }
 }
