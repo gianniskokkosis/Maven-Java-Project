@@ -23,6 +23,11 @@ public class ArithmeticOperationsTest{
         Assert.assertEquals(-2.0, test.divide(-20.0, 10.0), -0.1);
     }
 
+    @Test
+    public void divisionWithTwoNegativesNumbers(){
+        Assert.assertEquals(4.0, test.divide(-20.0, -5.0), 0.1);
+    }
+
     @Test(expected = ArithmeticException.class)
     public void divisonWithZero(){
         test.divide(20.0, 0.0);
