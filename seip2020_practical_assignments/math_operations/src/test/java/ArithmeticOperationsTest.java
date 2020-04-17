@@ -19,7 +19,7 @@ public class ArithmeticOperationsTest{
     }
 
     @Test
-    public void divisionWithTwoNegativesNumbers(){
+    public void divisionWithOneNegativesNumbers(){
         Assert.assertEquals(-2.0, test.divide(-20.0, 10.0), -0.1);
     }
 
