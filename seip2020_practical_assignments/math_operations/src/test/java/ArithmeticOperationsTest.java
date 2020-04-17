@@ -1,4 +1,4 @@
-package math
+package math;
 
 import org.junit.Test;
 import org.junit.Assert;
@@ -10,5 +10,12 @@ import org.junit.Assert;
 * @author gianniskokkosis
 */
 public class ArithmeticOperationsTest{
+
+    ArithmeticOperations test = new ArithmeticOperations();
+
+    @Test
+    public void simpleDivisionOfTwoDoubleNumbers(){
+        Assert.assertEquals(2.0, test.divide(10.0, 5.0));
+    }
 
 }
