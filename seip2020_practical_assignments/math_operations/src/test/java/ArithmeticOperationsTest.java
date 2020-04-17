@@ -15,7 +15,7 @@ public class ArithmeticOperationsTest{
 
     @Test
     public void simpleDivisionOfTwoDoubleNumbers(){
-        Assert.assertEquals(2.0, test.divide(10.0, 5.0));
+        Assert.assertEquals(2.0, test.divide(10.0, 5.0), 0.1);
     }
 
 }
