@@ -3,7 +3,7 @@ package math;
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.rules.ExpectedException;
-import org.junit.Rules;
+import org.junit.Rule;
 
 /**
 * The ArithmeticOperationsTest class provides all the necessary 
