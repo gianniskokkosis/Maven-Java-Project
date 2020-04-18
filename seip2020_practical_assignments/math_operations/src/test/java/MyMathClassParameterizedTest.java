@@ -15,14 +15,13 @@ import org.junit.Assert;
 public class MyMathClassParameterizedTest{
 
     MyMath mym = new MyMath();
+    
+    @Parameter (value = 0)
+    public int number;
 
-    private int number;
-    private int result;
+    @Parameter (value = 1)
+    public int result;
 
-    public MyMathClassParameterizedTest(int number, int result) {
-        this.number = number;
-        this.result = result;
-    }
 
     @Parameters
     public static Collection<Object[]> data(){
