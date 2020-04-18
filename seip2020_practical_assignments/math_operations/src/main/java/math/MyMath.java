@@ -9,7 +9,7 @@ public class MyMath{
             throw new IllegalArgumentException("Wrong! Number must be greater than 0 and smaller than 12. ");
         } else {
             for (int i = 1; i <= n; i++){
-                f *= 1;
+                f *= i;
             }
         }
 
