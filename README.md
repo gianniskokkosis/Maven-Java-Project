@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/gianniskokkosis/2nd-Assignment-SEIP.svg?token=L1eLS59Zf57fDVQXrFCy&branch=development)](https://travis-ci.com/gianniskokkosis/2nd-Assignment-SEIP)
+
 # 2nd Assignment SEIP
 
 This is the second individual assignment in Software Engineering in Practice (SEiP). This assignment contains a simple multi module maven project. The assignment is for the purposes of the course Software Engineering in Practice offered by the Department of Managment Science and Technology of Athens University Of Economics and Business(AUEB).
