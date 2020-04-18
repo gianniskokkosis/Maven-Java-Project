@@ -11,5 +11,10 @@ public class MyMathTest{
     public void inputSmallerThanZero(){
         myMath.factorial(-1);
     }
+
+    @Test(expected=IllegalArgumentException.class)
+    public void inputGreaterThanTwelve(){
+        myMath.factorial(14);
+    }
     
 }
