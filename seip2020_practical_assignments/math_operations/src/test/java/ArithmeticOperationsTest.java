@@ -49,4 +49,9 @@ public class ArithmeticOperationsTest{
         thrown.expect(IllegalArgumentException.class);
         test.multiply(2147483647, 2);
     }
+
+    @Test 
+    public void multiplyWithTwoIntegeresNumbers(){
+        Assert.assertEquals(100, test.multiply(10, 10));
+    }
 }
