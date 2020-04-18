@@ -1,8 +1,15 @@
-package test;
+package math;
 
 import org.junit.Test;
 import org.junit.Assert;
 
 public class MyMathTest{
+
+    MyMath myMath = new MyMath();
+
+    @Test(expected=IllegalArgumentException.class)
+    public void inputSmallerThanZero(){
+        myMath.factorial(-1);
+    }
     
 }
