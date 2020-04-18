@@ -10,7 +10,7 @@ branches:
 
 before_script:
   - cd seip2020_practical_assignments # Command to enter Maven root directory of the project
-  - la -la # this command just prints the contents of the current working directory
+  - ls -la # this command just prints the contents of the current working directory
 
 script:
   - mvn clean package # Execute this command in the root maven directory and the project will be build
