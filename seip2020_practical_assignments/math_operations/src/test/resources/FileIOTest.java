@@ -26,8 +26,8 @@ public class FileIOTest {
 
     @Test
     public void inputFileNotExists(){
-        String validInputFilePath = resources.concat("valid_values.txt");
-        Assert.assertEquals("Input file does not exist", file.readFile(validInputFilePath));
+        thrown.expect(IllegalArgumentException.class);
+        file.readFile("dummy_file.txt");
     }
     
 }
