@@ -13,7 +13,7 @@ before_script:
   - ls -la # this command just prints the contents of the current working directory
 
 script:
-  - mvn clean package # Execute this command in the root maven directory and the project will be build
+  - mvn package jacoco:report # Execute this command in the root maven directory and the project will be build
 
 after_success:
   - echo "Process completed successfylly!"
