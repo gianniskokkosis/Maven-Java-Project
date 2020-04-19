@@ -29,5 +29,12 @@ public class FileIOTest {
         thrown.expect(IllegalArgumentException.class);
         file.readFile("dummy_file.txt");
     }
+
+    @Test
+    public void inputFileEmpty(){
+        String emptyFile = resources.concat("empty_file.txt");
+        thrown.expect(IllegalArgumentException.class);
+        file.readFile(emptyFile);
+    }
     
 }
