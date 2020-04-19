@@ -20,5 +20,14 @@ public class FileIOTest {
         String validInputFilePath = resources.concat("valid_values.txt");
         Assert.assertArrayEquals(excpectedValues, file.readFile(validInputFilePath));
     }
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void inputFileNotExists(){
+        String validInputFilePath = resources.concat("valid_values.txt");
+        Assert.assertEquals("Input file does not exist", file.readFile(validInputFilePath));
+    }
     
 }
