@@ -17,3 +17,6 @@ script:
 
 after_success:
   - echo "Process completed successfylly!"
+
+after_failure:
+  - echo "Process ended with failures. Fix them and rebuild!"
