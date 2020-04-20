@@ -19,13 +19,13 @@ public class ArrayOperations {
             }
         }
 
-        int array[] = new array[primeArrayList.size()];
+        int primeArray[] = new array[primeArrayList.size()];
 
         for (int j = 0; j < primeArrayList.size(); j++){
-            array[j] = primeArrayList.get(j);
+            primeArray[j] = primeArrayList.get(j);
         }
 
-        return array;
+        return primeArray;
     }
     
 }
