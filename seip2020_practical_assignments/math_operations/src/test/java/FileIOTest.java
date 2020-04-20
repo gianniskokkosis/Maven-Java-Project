@@ -26,7 +26,7 @@ public class FileIOTest {
 
     @Test
     public void inputFileNotExists(){
-        String notExistFile = resourcesPath.concat("dummy_file.txt")
+        String notExistFile = resourcesPath.concat("dummy_file.txt");
         thrown.expect(IllegalArgumentException.class);
         file.readFile(notExistFile);
     }
