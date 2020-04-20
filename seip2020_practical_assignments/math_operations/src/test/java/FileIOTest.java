@@ -17,7 +17,7 @@ public class FileIOTest {
             1, 2, 3, 4, 10, 12, 22, 3333, 12,
             98, 100, 99, 39876, 343, 0, 1, 4};
 
-        String validInputFilePath = resources.concat("valid_values.txt");
+        String validInputFilePath = resourcesPath.concat("valid_values.txt");
         Assert.assertArrayEquals(excpectedValues, file.readFile(validInputFilePath));
     }
 
@@ -26,13 +26,14 @@ public class FileIOTest {
 
     @Test
     public void inputFileNotExists(){
+        String notExistFile = resourcesPath.concat("dummy_file.txt")
         thrown.expect(IllegalArgumentException.class);
-        file.readFile("dummy_file.txt");
+        file.readFile(notExistFile);
     }
 
     @Test
     public void inputFileEmpty(){
-        String emptyFile = resources.concat("empty_file.txt");
+        String emptyFile = resourcesPath.concat("empty_file.txt");
         thrown.expect(IllegalArgumentException.class);
         file.readFile(emptyFile);
     }
