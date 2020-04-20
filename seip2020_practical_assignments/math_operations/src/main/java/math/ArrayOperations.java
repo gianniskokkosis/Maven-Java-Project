@@ -13,7 +13,7 @@ public class ArrayOperations {
         int array [] = fileio.readFile(filepath);
         ArrayList<Integer> primeArrayList = new ArrayList<Integer>();
 
-        for (int i = 0; i < array.length(); i++){
+        for (int i = 0; i < array.length; i++){
             if (myMath.isPrime(array[i])){
                 primeArrayList.add(array[i]);
             }
