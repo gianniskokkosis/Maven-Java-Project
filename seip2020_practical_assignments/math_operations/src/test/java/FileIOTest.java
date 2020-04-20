@@ -37,5 +37,14 @@ public class FileIOTest {
         thrown.expect(IllegalArgumentException.class);
         file.readFile(emptyFile);
     }
+
+    @Test
+    public void testReadFileContainsInvalidEntries(){
+        int [] excpectedValues = new int[]{
+            1, 2, 3, 4, 1, 2, 4, 9, 6, 23, 54, 55, 33, 66, 100};
+
+        String invalidFile = resourcesPath.concat("invalid_values.txt");
+        Assert.assertArrayEquals(excpectedValues, file.readFile(invalidFile));
+    }
     
 }
