@@ -7,7 +7,7 @@ public class ArrayOperations {
     FileIO fileio = new FileIO();
     MyMath myMath = new MyMath();
 
-    public ArrayList<Integer> findPrimesInFile(FileIO fileio, String filepath, 
+    public int[] findPrimesInFile(FileIO fileio, String filepath, 
         MyMath myMath){
 
         int array [] = fileio.readFile(filepath);
@@ -19,7 +19,13 @@ public class ArrayOperations {
             }
         }
 
-        return primeArrayList;
+        int array[] = new array[primeArrayList.size()];
+
+        for (int j = 0; j < primeArrayList.size(); j++){
+            array[j] = primeArrayList.get(j);
+        }
+
+        return array;
     }
     
 }
