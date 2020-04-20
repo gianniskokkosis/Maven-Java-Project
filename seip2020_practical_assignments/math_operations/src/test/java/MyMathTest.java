@@ -16,5 +16,15 @@ public class MyMathTest{
     public void inputGreaterThanTwelve(){
         myMath.factorial(14);
     }
+
+    @Test
+    public void isPrimeNumber(){
+        Assert.assertTrue(myMath.isPrime(5));
+    }
+
+    @Test
+    public void isNotPrimeNumber(){
+        Assert.assertFalse(myMath.isPrime(9));
+    }
     
 }
