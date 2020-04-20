@@ -52,4 +52,41 @@ public class FileIO {
 		return numbersList.stream().mapToInt(i -> i).toArray();
 	}
 
+
+	/**
+	 * isInt takes a String as an argument and returns
+	 * false if the given string does not represent an integer
+	 * number. Otherwise, it returns true if the given string 
+	 * represents an integer number
+	 * @param input which is a String variable
+	 */
+	public static boolean isInt(String input){
+		/*
+		 * If input is null or an empty string
+		 * then return false because the input variable 
+		 * does not represent an integer number
+		 */
+		if (input == null || input.trim().isEmpty()){
+			return false;
+		}
+
+		/*
+		 * Loop through the characters of input variable.
+		 * If one of the i'th characters of input is not a digit,
+		 * then return false because it does not represent an integer
+		 * number.
+		 */
+		for (int i = 0; i < input.length(); i++){
+			if (!Character.isDigit(input.charAt(i))){
+				return false;
+			}
+		}
+		/*
+		 * Otherwise return true because all the characters of
+		 * input variable are digits so input variable represents
+		 * an integer number
+		 */ 
+		return true;
+	}
+
 }
