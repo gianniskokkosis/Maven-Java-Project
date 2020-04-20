@@ -19,7 +19,7 @@ public class ArrayOperations {
             }
         }
 
-        int primeArray[] = new array[primeArrayList.size()];
+        int primeArray[] = new int[primeArrayList.size()];
 
         for (int j = 0; j < primeArrayList.size(); j++){
             primeArray[j] = primeArrayList.get(j);
