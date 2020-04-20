@@ -28,4 +28,12 @@ public class MyMathTest{
     public void isNotPrimeNumber(){
         Assert.assertFalse(myMath.isPrime(9));
     }
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    public void inputSmallerThanTwoInIsPrime(){
+        thrown.expect(IllegalAccessException.class);
+        myMath.isPrime(0);
+    }
 }
