@@ -30,6 +30,11 @@ public class ArithmeticOperationsTest{
         Assert.assertEquals(4.0, test.divide(-20.0, -5.0), 0.1);
     }
 
+    @Test
+    public void zeroNumeratorDivision(){
+        Assert.assertEquals(0.0, test.divide(0.0, 10.0), 0.1);
+    }
+
     @Test(expected = ArithmeticException.class)
     public void divisonWithZero(){
         test.divide(20.0, 0.0);
