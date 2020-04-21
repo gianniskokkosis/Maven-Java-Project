@@ -26,7 +26,7 @@ cd seip2020_practical_assignments
 
 Finally hit the following command in order to build all modules
 ```
-mvn package
+mvn package jacoco:report
 ```
 
 
