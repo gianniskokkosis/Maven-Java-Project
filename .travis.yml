@@ -16,7 +16,7 @@ script:
   - mvn package jacoco:report # Execute this command in the root maven directory and the project will be build
 
 after_success:
-  - echo "Process completed successfylly!"
+  - echo "Process completed successfully!"
 
 after_failure:
   - echo "Process ended with failures. Fix them and rebuild!"
