@@ -47,7 +47,7 @@ public class ArithmeticOperationsTest{
     @Test
     public void multiplyWithBigIntegersNumbers(){
         thrown.expect(IllegalArgumentException.class);
-        test.multiply(2147483647, 2);
+        test.multiply(Integer.MAX_VALUE, 2);
     }
 
     @Test 
