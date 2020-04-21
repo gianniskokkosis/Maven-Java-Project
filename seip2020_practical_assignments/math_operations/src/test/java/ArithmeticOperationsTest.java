@@ -50,6 +50,11 @@ public class ArithmeticOperationsTest{
     }
 
     @Test
+    public void multiplyWhenYIsZero(){
+        Assert.assertEquals(0, test.multiply(10, 0));
+    }
+
+    @Test
     public void multiplyWithBigIntegersNumbers(){
         thrown.expect(IllegalArgumentException.class);
         test.multiply(Integer.MAX_VALUE, 2);
