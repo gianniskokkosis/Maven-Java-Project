@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/gianniskokkosis/2nd-Assignment-SEIP.svg?token=L1eLS59Zf57fDVQXrFCy&branch=development)](https://travis-ci.com/gianniskokkosis/2nd-Assignment-SEIP)
+
 # 2nd Assignment SEIP
 
 This is the second individual assignment in Software Engineering in Practice (SEiP). This assignment contains a simple multi module maven project. The assignment is for the purposes of the course Software Engineering in Practice offered by the Department of Managment Science and Technology of Athens University Of Economics and Business(AUEB).
@@ -24,7 +26,7 @@ cd seip2020_practical_assignments
 
 Finally hit the following command in order to build all modules
 ```
-mvn package
+mvn package jacoco:report
 ```
 
 
@@ -64,5 +66,11 @@ The produced jar is located in the target directory and can be executed as follo
 ```
 $ java -jar seip2020_practical_assignments/gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar  C:/.../a path to the file/.../
 ```
+
+### Math Operations
+
+For more informations about Math Operations click the link below
+
+[Click Here](seip2020_practical_assignments/math_operations/README.md) to learn more 
 
 ### Developed by: ```gianniskokkosis```

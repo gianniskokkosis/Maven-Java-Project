@@ -1,0 +1,22 @@
+language: java
+
+jdk:
+  - openjdk8
+
+branches:
+  only:
+    - master
+    - development
+
+before_script:
+  - cd seip2020_practical_assignments # Command to enter Maven root directory of the project
+  - ls -la # this command just prints the contents of the current working directory
+
+script:
+  - mvn package jacoco:report # Execute this command in the root maven directory and the project will be build
+
+after_success:
+  - echo "Process completed successfully!"
+
+after_failure:
+  - echo "Process ended with failures. Fix them and rebuild!"
