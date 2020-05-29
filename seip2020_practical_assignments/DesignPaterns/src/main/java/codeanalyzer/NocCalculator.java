@@ -1,7 +1,8 @@
 package codeanalyzer;
 
-public class NocCalculator implements MetricCalculator{
+public class NocCalculator implements SourceCodeAnalyzer{
 
+    @Override
     public int calculateMetric(String filepath, String analyzerType){
 		if(analyzerType.equals("regex")) {
             String sourceCode = fileReader.readFileIntoString(filepath);
