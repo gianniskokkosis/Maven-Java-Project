@@ -28,8 +28,8 @@ public class WebFileReader implements SourceFileReader{
     @Override
     public Strign readFileIntoString(String filepath) throws IOException{
         StringBuilder sb = new StringBuilder();
-        File file = new File(filepath);
-        BufferedReader reader = new BufferedReader(new FileReader(file));
+        URL url = new URL(filepath);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
         String line = null;
         while ((line = reader.readLine()) != null) {
             sb.append(line + "\n");
