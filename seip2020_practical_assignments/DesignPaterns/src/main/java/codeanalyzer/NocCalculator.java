@@ -1,6 +1,6 @@
 package codeanalyzer;
 
-public class LocCalculator implements MetricCalculator{
+public class NocCalculator implements MetricCalculator{
 
     public int calculateMetric(){
         //do something here
