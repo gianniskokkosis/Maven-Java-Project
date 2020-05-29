@@ -2,5 +2,5 @@ package codeanalyzer;
  
 public interface MetricCalculator{
 
-    public int calculateMetric();
+    public int calculateMetric(String filepath, String analyzerType);
 }
