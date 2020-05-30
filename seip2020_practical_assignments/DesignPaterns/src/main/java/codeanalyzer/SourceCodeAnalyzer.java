@@ -7,5 +7,5 @@ import java.util.regex.Pattern;
 
 public interface SourceCodeAnalyzer{
 
-    public int calculateMetric(String filepath, String analyzerType);
+    public int calculateMetric(String filepath, String analyzerType, String sourceFileLocation);
 }

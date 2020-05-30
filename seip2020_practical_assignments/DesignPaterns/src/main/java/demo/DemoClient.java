@@ -27,9 +27,9 @@ public class DemoClient {
 		}
 
 		SourceCodeAnalyzer analyzer = new SourceCodeAnalyzer(sourceFileLocation);
-		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType);
-		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType);
-		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType);
+		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType, sourceFileLocation);
+		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType, sourceFileLocation);
+		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType, sourceFileLocation);
 		
 		Map<String, Integer> metrics = new HashMap<>();
 		metrics.put("loc",loc);
