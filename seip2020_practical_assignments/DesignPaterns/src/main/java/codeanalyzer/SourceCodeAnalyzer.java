@@ -5,7 +5,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public interface SourceCodeAnalyzer{
+public abstract class SourceCodeAnalyzer{
 
-    public int calculateMetric(String filepath, String analyzerType, String sourceFileLocation);
+   	protected SourceFileReader fileReader;
+	
+	public CodeAnalyzer(SourceFileReader fileReader){
+		this.fileReader = fileReader;
+	}
+	
+	public abstract int calculate(String filepath, String analyzerType) 
+			throws IOException;
 }
