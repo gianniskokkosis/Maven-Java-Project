@@ -1,6 +1,11 @@
 package codeanalyzer;
 
-public class LocCalculator implements SourceCodeAnalyzer{
+public class CalculateLOC implements SourceCodeAnalyzer{
+
+	public CalculateLOC(CodeFileReader fileReader) {
+		super(fileReader);
+	}
+	
 
     @Override
     public int calculateMetric(String filepath, String analyzerType){
