@@ -73,4 +73,8 @@ For more informations about Math Operations click the link below
 
 [Click Here](seip2020_practical_assignments/math_operations/README.md) to learn more 
 
+### Design Patterns
+
+[Click here](seip2020_practical_assignments/DesignPatterns/README.md)
+
 ### Developed by: ```gianniskokkosis```
