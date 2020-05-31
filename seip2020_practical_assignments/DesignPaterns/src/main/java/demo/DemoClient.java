@@ -23,7 +23,9 @@ public class DemoClient {
 			System.out.println("Incorrect number of arguments.");
 			System.exit(1);
 		}
+
 		Facade fc = new Facade();
+		fc.executeOperation(filepath, sourceCodeAnalyzerType, sourceFileLocation, outputFileType, outputFilePath);
 
 	}
 
