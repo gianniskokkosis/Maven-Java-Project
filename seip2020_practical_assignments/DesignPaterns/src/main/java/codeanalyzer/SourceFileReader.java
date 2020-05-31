@@ -1,6 +1,7 @@
 package codeanalyzer;
 
 import java.io.IOException;
+import java.util.List;
 /**
  * Retrieves (reads) the contents of a given file.
  * The file can be stored locally or exist on the web.
