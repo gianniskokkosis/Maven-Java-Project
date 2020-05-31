@@ -80,5 +80,5 @@ Design Patterns module is an intoduction in Design Patterns and Software Archite
 
  # Class Diagram Image
 
- ![](resources/Design%20Patterns%204th%20assignment.png)
+ ![](resources/Design_Patterns_4th_assignment.png)
 
