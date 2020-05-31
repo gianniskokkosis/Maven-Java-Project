@@ -11,7 +11,7 @@ import java.util.List;
 public class WebFileReader implements SourceFileReader{
 
     @Override
-    public List<String> readFileIntoString(String filepath) throws IOException{
+    public List<String> readFileIntoList(String filepath) throws IOException{
         List<String> lines = new ArrayList<>();
         URL url = new URL(filepath);
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -24,7 +24,7 @@ public class WebFileReader implements SourceFileReader{
     }
 
     @Override
-    public Strign readFileIntoString(String filepath) throws IOException{
+    public String readFileIntoString(String filepath) throws IOException{
         StringBuilder sb = new StringBuilder();
         URL url = new URL(filepath);
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));

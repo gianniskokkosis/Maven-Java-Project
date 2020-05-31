@@ -6,10 +6,10 @@ public abstract class SourceCodeAnalyzer{
 
    	protected SourceFileReader fileReader;
 	
-	public CodeAnalyzer(SourceFileReader fileReader){
+	public SourceCodeAnalyzer(SourceFileReader fileReader){
 		this.fileReader = fileReader;
 	}
 	
-	public abstract int calculate(String filepath, String analyzerType) 
+	public abstract int calculateMetric(String filepath, String analyzerType) 
 			throws IOException;
 }

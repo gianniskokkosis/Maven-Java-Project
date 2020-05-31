@@ -1,10 +1,8 @@
 package codeanalyzer;
 
-import java.util.Map;
-
 public class MetricsFileExporterFactory {
 	
-	public MetricsFileExporter getExporter(String outputType, Map<String, Integer> metrics, String filepath) {
+	public MetricsFileExporter getExporter(String outputType) {
 		MetricsFileExporter exporter;
 		
 		if (outputType.equals("csv")) {
