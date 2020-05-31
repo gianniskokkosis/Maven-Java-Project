@@ -25,7 +25,7 @@ public class Facade {
 		metrics.put("nom", nom);
 		metrics.put("noc", noc);
 		
-		exporter.writeFile(outputFileType, metrics, outputFilePath);
+		exporter.writeFile(metrics, outputFilePath);
 	}
 
 }

@@ -7,13 +7,13 @@ import java.io.IOException;
 
 public interface MetricsFileExporter {
 	
-	public void writeFile(String outputType, Map<String, Integer> metrics, String filepath);
+	public void writeFile(Map<String, Integer> metrics, String filepath);
 }
 
 class MetricsExporterCSV implements MetricsFileExporter {
 
 	@Override
-	public void writeFile(String outputType, Map<String, Integer> metrics, String filepath) {
+	public void writeFile(Map<String, Integer> metrics, String filepath) {
 		File outputFile = new File(filepath + ".csv");
 		StringBuilder metricsNames = new StringBuilder();
 		StringBuilder metricsValues = new StringBuilder();
@@ -39,7 +39,7 @@ class MetricsExporterCSV implements MetricsFileExporter {
 class MetricsExporterJSON implements MetricsFileExporter {
 
 	@Override
-	public void writeFile(String outputType, Map<String, Integer> metrics, String filepath) {
+	public void writeFile(Map<String, Integer> metrics, String filepath) {
 		//do som
 
 	}
