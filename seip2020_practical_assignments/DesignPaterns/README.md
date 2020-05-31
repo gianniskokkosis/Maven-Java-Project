@@ -78,3 +78,7 @@ Design Patterns module is an intoduction in Design Patterns and Software Archite
 
  * The abality of adding new analyzer types is not provided.
 
+ # Class Diagram Image
+
+ ![](resources/Design%20Patterns%204th%20assignment.png)
+
