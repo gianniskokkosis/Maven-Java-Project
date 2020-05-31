@@ -11,7 +11,9 @@ public class Facade {
 	public void executeOperation(String filepath, String analyzerType, String sourceFileLocation, 
 			String outputFileType, String outputFilePath) throws IOException {
 		SourceCodeAnalyzerFactory factoryCodeAnalyzer = new SourceCodeAnalyzerFactory();
-		MetricsFileExporterFactory exporter = new MetricsFileExporterFactory();
+		MetricsFileExporterFactory exporterFactory = new MetricsFileExporterFactory();
+
+        MetricsFileExporter exporter = exporterFactory.getExporter(outputFileType);
 		List<SourceCodeAnalyzer> objects = factoryCodeAnalyzer.createSourceCodeAnalyzerObjs(sourceFileLocation);
 		
 		int loc = objects.get(0).calculateMetric(filepath, analyzerType);

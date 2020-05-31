@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class MetricsFileExporterFactory {
 	
-	public MetricsFileExporter writeFile(String outputType, Map<String, Integer> metrics, String filepath) {
+	public MetricsFileExporter getExporter(String outputType, Map<String, Integer> metrics, String filepath) {
 		MetricsFileExporter exporter;
 		
 		if (outputType.equals("csv")) {
