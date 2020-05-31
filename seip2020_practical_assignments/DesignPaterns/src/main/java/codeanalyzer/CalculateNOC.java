@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CalculateNOC implements SourceCodeAnalyzer{
+public class CalculateNOC extends SourceCodeAnalyzer{
 
     public CalculateNOC(SourceFileReader fileReader) {
 		super(fileReader);

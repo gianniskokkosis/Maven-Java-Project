@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CalculateLOC implements SourceCodeAnalyzer{
+public class CalculateLOC extends SourceCodeAnalyzer{
 
     public CalculateLOC(SourceFileReader fileReader) {
 		super(fileReader);
