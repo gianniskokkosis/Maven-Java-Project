@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 public class SourceCodeAnalyzerFactory{
 
-    public List<SourceCodeAnalyzer> createSourceCodeAnalyzerObjs(String analyzerType, 
-            String sourceFileLocation){
+    public List<SourceCodeAnalyzer> createSourceCodeAnalyzerObjs(String sourceFileLocation){
 
         List<SourceCodeAnalyzer> objs = new ArrayList<SourceCodeAnalyzer>();
 		SourceCodeAnalyzer analyzeLoc = null;
