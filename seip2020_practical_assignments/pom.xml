@@ -178,6 +178,8 @@
     <module>gradeshistogram</module>
 
     <module>math_operations</module>
+
+    <module>DesignPaterns</module>
       
   </modules>
 </project>
